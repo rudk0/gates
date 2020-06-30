@@ -1,15 +1,22 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
 
 
-import './App.css';
 import Page from "./components/Page";
+import {LogTable} from "./components/LogTable";
 
 
-function App() {
-
+function App(props) {
+  const {location} = props;
   return (
-    <Page/>
+    <Switch location={location}>
+      <Route path={'/'} exact={true} component={Page}/>
+      <Route path={'/logs'} component={LogTable}/>
+    </Switch>
   );
 }
 

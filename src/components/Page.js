@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import './Page.css';
 import axios from "axios";
+import {faBiking, faCar, faMale} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 function Page() {
@@ -57,20 +59,21 @@ function Page() {
       )
   }
 
+  console.log(state);
 
 
   return (
     <div className="page">
       {state && <div className={`alert blue alert-warning`}>{state}</div>}
       <div className={'buttons'}>
-        <button className="btn btn2 btn-dark" onClick={() => handleClick('bike')}>🚲</button>
-        <button className="btn btn3 btn-dark" onClick={() => handleClick('man')}>🚶🏻</button>
+        <button className="btn btn2 btn-dark" onClick={() => handleClick('bike')}><div><FontAwesomeIcon icon={faBiking} /></div></button>
+        <button className="btn btn3 btn-dark" onClick={() => handleClick('man')}><div ><FontAwesomeIcon className={'white'} icon={faMale} /></div></button>
       </div>
-      <button className="btn btn1 btn-dark" onClick={() => handleClick('car')}>🚗</button>
+      <button className="btn btn1 btn-dark" onClick={() => handleClick('car')}><div ><FontAwesomeIcon icon={faCar} /></div></button>
     </div>
   );
 
 
-}
 
+}
 export default Page;
