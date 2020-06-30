@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 
-import './App.css';
 import Page from "./components/Page";
 import {LogTable} from "./components/LogTable";
 

@@ -1,4 +1,4 @@
-.page{
+.page {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -10,30 +10,37 @@
     flex-flow: column;
     justify-content: flex-end;
 }
-.btn1{
+
+.btn1 {
     margin: 10px auto;
     padding: 12px;
     width: calc(100% - 48px);
     font-size: 3em;
 }
-.btn2{
+
+.btn2 {
     margin-right: 8px;
     font-size: 3em;
-}
-.btn3{
-    margin-left: 8px;
-    font-size: 3em;
+    width: 100%;
+
 }
 
-.buttons{
+.btn3 {
+    margin-left: 8px;
+    font-size: 3em;
+    width: 100%;
+
+}
+
+.buttons {
+    margin: 0 24px;
     display: flex;
     width: calc(100% - 48px);
-    margin: auto;
 }
 
 .blue {
     position: absolute;
-    top:10%;
+    top: 10%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -41,7 +48,8 @@
     right: 0;
     text-align: center;
 }
-.bg{
+
+.bg {
     display: inline;
     font-size: 42px;
     vertical-align: baseline;
@@ -53,7 +61,8 @@
     height: 52px;
 
 }
-.btn{
+
+.btn {
     display: flex;
     justify-content: center;
 }
