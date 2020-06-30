@@ -57,20 +57,21 @@ function Page() {
       )
   }
 
+  console.log(state);
 
 
   return (
     <div className="page">
       {state && <div className={`alert blue alert-warning`}>{state}</div>}
       <div className={'buttons'}>
-        <button className="btn btn2 btn-dark" onClick={() => handleClick('bike')}>🚲</button>
-        <button className="btn btn3 btn-dark" onClick={() => handleClick('man')}>🚶🏻</button>
+        <button className="btn btn2 btn-dark" onClick={() => handleClick('bike')}>🚲<div className={'bg'}>🚲</div></button>
+        <button className="btn btn3 btn-dark" onClick={() => handleClick('man')}><div className={'bg'}></div></button>
       </div>
-      <button className="btn btn1 btn-dark" onClick={() => handleClick('car')}>🚗</button>
+      <button className="btn btn1 btn-dark" onClick={() => handleClick('car')}><div className={'bg'}>🚗</div></button>
     </div>
   );
 
 
-}
 
+}
 export default Page;
